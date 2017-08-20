@@ -4,7 +4,8 @@ public class SimpleDotComGame {
         GameHelper playerGuessInput = new GameHelper();
         SimpleDotCom obj = new SimpleDotCom();
         int randomNum = (int) (Math.random() * 5 + 1);
-        int[] locationsArray = {randomNum, randomNum + 1, randomNum + 2};
+        int[] locationsArray;
+        locationsArray = new int[]{randomNum, randomNum + 1, randomNum + 2};
         obj.setLocations(locationsArray);
         int numGuesses = 0;
         int numHits = 0;
